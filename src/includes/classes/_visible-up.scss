@@ -4,7 +4,7 @@
 
     @include breakpoint-up(breakpoint($breakpoint)) {
       @each $display in $displays {
-        .v-#{$breakpoint}-up {
+        .v-#{$breakpoint}-up-#{$display} {
           display: $display !important;
         }
       }

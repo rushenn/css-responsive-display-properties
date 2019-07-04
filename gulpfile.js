@@ -9,7 +9,7 @@ let rename = require('gulp-rename');
 let paths = {
     src: {
         dir: 'src',
-        main: 'src/responsive-display-properties.scss',
+        main: 'src/responsive-display-utilities.scss',
         files: 'src/**/*.scss'
     },
     dist: {
@@ -17,6 +17,10 @@ let paths = {
     }
 };
 
+// Compile SCSS to CSS
+// Combine Media Queries
+// Minify CSS
+// Rename CSS (.min)
 gulp.task('handle-css', () => {
     return gulp.src (paths.src.main)
         .pipe(sass())
