@@ -7,7 +7,7 @@ let cleanCSS = require('gulp-clean-css');
 let rename = require('gulp-rename');
 
 let paths = {
-    scss: {
+    src: {
         dir: 'src',
         main: 'src/responsive-display-properties.scss',
         files: 'src/**/*.scss'
@@ -17,8 +17,8 @@ let paths = {
     }
 };
 
-function scss() {
-    return gulp.src (paths.scss.main)
+gulp.task('handle-css', () => {
+    return gulp.src (paths.src.main)
         .pipe(sass())
         .pipe(gcmq())
         .pipe(cleanCSS({
@@ -32,10 +32,13 @@ function scss() {
             suffix: '.min'
         }))
         .pipe(gulp.dest (paths.dist.dir));
-}
+});
 
 // Watch
 gulp.task('watch', () => {
     // SCSS
-    gulp.watch(paths.scss.files, gulp.series(scss));
+    gulp.watch(paths.src.files, gulp.parallel('handle-css'));
 });
+
+// Default task
+gulp.task('default', gulp.parallel('handle-css'));
