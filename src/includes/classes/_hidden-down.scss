@@ -1,0 +1,12 @@
+// Classes to hide elements from a particular screen size to below
+@each $breakpoint, $value in $breakpoints {
+  @if $breakpoint != "xs" and $breakpoint != "sm" { // Ignore xs and sm as we don't need it
+
+    @include breakpoint-down(breakpoint($breakpoint)) {
+      .h-#{$breakpoint}-down {
+        display: none !important;
+      }
+    }
+  }
+}
+

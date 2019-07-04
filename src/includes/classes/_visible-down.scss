@@ -1,0 +1,13 @@
+// Classes to show elements from a particular screen size to above
+@each $breakpoint, $value in $breakpoints {
+  @if $breakpoint != "xs" and $breakpoint != "sm" { // Ignore xs and sm as we don't need it
+
+    @include breakpoint-down(breakpoint($breakpoint)) {
+      @each $display in $displays {
+        .v-#{$breakpoint}-down {
+          display: $display !important;
+        }
+      }
+    }
+  }
+}

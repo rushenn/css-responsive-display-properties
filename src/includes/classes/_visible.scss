@@ -1,0 +1,32 @@
+// Classes to show elements in certain screen sizes
+@each $display in $displays {
+  @include breakpoint-up(breakpoint(sm)) {
+    .v-xs-#{$display} {
+      display: $display !important;
+    }
+  }
+
+  @include breakpoint-between(breakpoint(md), breakpoint(sm)) {
+    .v-sm-#{$display} {
+      display: $display !important;
+    }
+  }
+
+  @include breakpoint-between(breakpoint(lg), breakpoint(md)) {
+    .v-md-#{$display} {
+      display: $display !important;
+    }
+  }
+
+  @include breakpoint-between(breakpoint(xl), breakpoint(lg)) {
+    .v-lg-#{$display} {
+      display: $display !important;
+    }
+  }
+
+  @include breakpoint-up(breakpoint(xl)) {
+    .v-xl-#{$display} {
+      display: $display !important;
+    }
+  }
+}

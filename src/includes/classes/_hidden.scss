@@ -1,0 +1,30 @@
+// Classes to hide elements in certain screen sizes
+.h-xs {
+  @include breakpoint-down(breakpoint(sm)) {
+    display: none;
+  }
+}
+
+.h-sm {
+  @include breakpoint-between(breakpoint(md), breakpoint(sm)) {
+    display: none;
+  }
+}
+
+.h-md {
+  @include breakpoint-between(breakpoint(lg), breakpoint(md)) {
+    display: none;
+  }
+}
+
+.h-lg {
+  @include breakpoint-between(breakpoint(xl), breakpoint(lg)) {
+    display: none;
+  }
+}
+
+.h-xl {
+  @include breakpoint-up(breakpoint(xl)) {
+    display: none;
+  }
+}

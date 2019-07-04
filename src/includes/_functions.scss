@@ -1,0 +1,4 @@
+// Function to return breakpoint values
+@function breakpoint($key) {
+  @return map-get($breakpoints, $key);
+}

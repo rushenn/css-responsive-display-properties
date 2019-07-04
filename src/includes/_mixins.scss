@@ -1,0 +1,20 @@
+// Media query min-width
+@mixin breakpoint-up($breakpoint) {
+  @media (min-width: $breakpoint + 1) {
+    @content;
+  }
+}
+
+// Media query max-width
+@mixin breakpoint-down($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Media query between max-width and min-width
+@mixin breakpoint-between($breakpoint-high, $breakpoint-low) {
+  @media (max-width: $breakpoint-high) and (min-width: $breakpoint-low + 1) {
+    @content;
+  }
+}

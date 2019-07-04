@@ -1,0 +1,19 @@
+{
+  "name": "css-responsive-display-properties",
+  "version": "1.0.0",
+  "description": "Responsive CSS display classes to show/hide elements",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rushenn",
+  "license": "MIT"
+}

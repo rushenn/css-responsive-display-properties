@@ -1,0 +1,13 @@
+// CSS Display properties
+// You can more display properties if you wish
+// eg. inline, grid, inline-grid, table, inline-row etc.
+$displays: block, inline-block, flex, inline-flex !default;
+
+// Breakpoint values for various devices to use in media queries
+$breakpoints: (
+    xs:   0,
+    sm:   576px,
+    md:   768px,
+    lg:   992px,
+    xl:   1200px
+) !default;
