@@ -1,9 +1,9 @@
-# CSS Responsive Display Properties
+# CSS Responsive Display Utilities
 Responsive CSS display utility classes to show/hide content by device via media query.
 
 ## Installation
 ```bash
-$ npm install css-responsive-display-properties --save
+$ npm install css-responsive-display-utilities --save
 ```
 ## Usage
 
