@@ -1,6 +1,6 @@
 {
   "name": "css-responsive-display-utilities",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Responsive CSS display utility classes to show/hide content by device via media query.",
   "main": "gulpfile.js",
   "dependencies": {},
