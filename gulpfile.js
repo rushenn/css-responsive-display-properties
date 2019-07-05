@@ -9,7 +9,7 @@ let rename = require('gulp-rename');
 let paths = {
     src: {
         dir: 'src',
-        main: 'src/responsive-display-utilities.scss',
+        main: 'src/css-responsive-display-utilities.scss',
         files: 'src/**/*.scss'
     },
     dist: {

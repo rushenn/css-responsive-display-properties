@@ -1,8 +1,8 @@
 {
-  "name": "css-responsive-display-properties",
+  "name": "css-responsive-display-utilities",
   "version": "1.0.0",
-  "description": "Responsive CSS display classes to show/hide elements",
-  "main": "",
+  "description": "Responsive CSS display utility classes to show/hide content by device via media query.",
+  "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -15,5 +15,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rushenn",
+  "homepage": "https://github.com/rushenn/css-responsive-display-utilities",
   "license": "MIT"
 }
