@@ -11,7 +11,7 @@ To use css-responsive-display-properties in your website, simply load the styles
 
 ```html
 <head>
-  <link rel="stylesheet" href="responsive-display-properties.min.css">
+  <link rel="stylesheet" href="css-responsive-display-utilities.min.css">
 </head>
 ```
 
