@@ -63,4 +63,4 @@ and use required CSS class with any elements.
 
 ## License
 
-CSS Responsive Display Properties is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+CSS Responsive Display Utilities is licensed under the MIT license. (http://opensource.org/licenses/MIT)
